@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-app
+spec:
+  replicas: 1   # Override the number of replicas for dev
+  template:
+    spec:
+      containers:
+        - name: sample-app
+          image: gcr.io/my-project/sample-app:dev  # Use dev image
