@@ -1,6 +1,7 @@
 resources:
   - ../../base
-  - pdb.yaml
+
 namespace: dev
 patchesStrategicMerge:
   - patch.yaml    # Applies custom changes to the base Deployment
+  - pdb.yaml
